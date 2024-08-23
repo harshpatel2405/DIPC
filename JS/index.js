@@ -2,7 +2,7 @@
 
 // var , let and const
 
-//var can be called again and again as it is 
+console.log("Day 1 : Variables and Keywords");
 console.log("var keyword");
 var x=55;
 console.log("First x = ",x);
@@ -22,19 +22,24 @@ const pi=3.14;
 // let pi=3.14;  Here pi cannot be declared again and cannot be updated as its value is now fixed....
 console.log("First pi = ",pi)
 
-
+console.log("\n");console.log("\n");
 
 
 //Day 2 : 23/08/2024   : OPERATORS
+console.log("Day 2 : OPERATORS")
 
 // 1. Arithmetic operator
-
+console.log("\n");
+console.log("1. Arithmetic operator");
 let a =48;
 let b = 36;
 let c=75;
 let d=97;
-console.log("\n");
-console.log("1. Arithmetic operator");
+
+console.log(" a : ", a);
+console.log(" b : ", b);
+console.log(" c : ", c );
+console.log(" d : ", d );
 console.log("Addition : ",(a+b));
 console.log("Subtraction : ",a-b);
 console.log("Multiplication : ",a*b);
@@ -73,7 +78,10 @@ console.log("e **= g : ", e **= g);
 console.log("\n");
 console.log("3. Bitwise Assignment Operators");
 let h = 10; //1010
-let i = 2; //010
+let i = 2; //0010
+
+console.log(" h : ", h);
+console.log(" i : ", i);
 
 console.log("h <<= i : ", h <<= i); // Left shift: h = h << i (10 << 2) = 40 (Binary: 101000)
 console.log("h >>= i : ", h >>= i); // Right shift: h = h >> i (40 >> 2) = 10 (Binary: 1010)
@@ -85,6 +93,10 @@ console.log("4. Bitwise Assignment Operators");
 let j = 45;
 let k = 78;
 
+console.log(" j : ", j);
+console.log(" k : ", k);
+
+
 console.log("j &= k : ", j &= k);
 console.log("j ^= k : ", j ^= k);
 console.log("j |= k : ", j |= k);
@@ -95,8 +107,10 @@ console.log("4. Logical Assignment Operators");
 let l = 45; // or any other boolean value
 let m = 36; // or any other boolean value
 
+
+console.log(" l : ", l);
+console.log(" m : ", m);
+
 console.log("l &&= m : ", l &&= m);
 console.log("l ||= m : ", l ||= m);
 console.log("l ??= m : ", l ??= m);
-
-
