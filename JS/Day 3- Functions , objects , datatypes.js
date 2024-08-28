@@ -21,6 +21,15 @@ console.log(su)
 console.log(mu)
 console.log(zu)
 
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+console.log("Object : ",person);
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+console.log("Array : ",cars);
+// Date object:
+const date = new Date("2022-03-25");
+console.log("Date : ",date);
 // functions
 
 function add(a,b){
@@ -36,6 +45,7 @@ function onetonine(){
     }
 }
 console.log("Numbers from 1 to 9 : ",onetonine());
+
 
 
 //objects
