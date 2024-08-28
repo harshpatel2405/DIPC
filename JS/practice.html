@@ -6,22 +6,25 @@
     <script src="/JS/index.js"></script>
     <link rel="stylesheet" href="/html-css/styles.css">
     <title>Js Practice </title>
+    
 </head>
 <body>
-    <h1>Click the light bulb to turn on/off the light.</h1>
-    <img id="myImage" onclick="changeImage()" src="bulboff.jpeg" width="350" height="600">
+  <h2>What Can JavaScript Do?</h2>
+
+  <p>JavaScript can change HTML attribute values.</p>
+  
+  <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+  
+  <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+  
+  <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+  
+  <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+  
+    
 
 
 
-<script>
-function changeImage() {
-  var image = document.getElementById('myImage');
-  if (image.src.match("bulbon")) {
-    image.src = "bulboff.jpeg";
-  } else {
-    image.src ="bulbon.jpeg";
-  }
-}
-</script>
+
 </body>
 </html>
