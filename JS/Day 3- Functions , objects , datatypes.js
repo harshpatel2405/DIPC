@@ -44,3 +44,4 @@ const harsh = {
   };
 
 console.log("Value fetch using objects : \nName :",harsh.name +"\nAge: ", harsh.age+"\nEyecolor: ",harsh.eyeColor);
+
