@@ -88,3 +88,51 @@ console.log("l &&= m : ", l &&= m);
 console.log("l ||= m : ", l ||= m);
 console.log("l ??= m : ", l ??= m);
 
+//Write a js program to check if a number is divisible by 2 and 3.
+
+function checkDivisible(num){
+    if(num%2==0 && num%3==0){
+        console.log(num," is divisible by 2 and  3");
+    }
+    else{
+        console.log(num," is not divisible by 2 and 3");
+    }
+}
+console.log("\n");
+console.log("Write a js program to check if a number is divisible by 2 and 3");
+let num = 6;
+checkDivisible(num);
+
+
+//Write a js program to check if a number is divisile by 2 or 3.
+
+function checkDivisible(numm){
+    if(numm%2==0 || numm%3==0){
+        console.log(numm," is divisible by 2 or  3");
+    }
+    else{
+        console.log(numm," is not divisible by 2 or  3");
+    }
+}
+console.log("\n");
+console.log("Write a js program to check if a number is divisile by 2 or 3");
+
+
+
+let numm = 7;
+checkDivisible(numm);
+
+
+
+function age(age){
+    if(age>=18){
+        console.log("You are eligible to vote");
+    }
+    else{
+        console.log("You are not eligible to vote");
+    }
+}
+console.log("\n");  
+console.log("Write a js program to check if a person is eligible to vote"); 
+let agee = 19;
+age(agee);

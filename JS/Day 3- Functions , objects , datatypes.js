@@ -1,8 +1,3 @@
-
-
-
-
-
 // Day 3 : Datatypes , functions
 
 // String
@@ -15,7 +10,7 @@
 // Object
 
 let str="hello";  //string
-let num=123; //number
+let nummmm=123; //number
 let bi=true; //boolen also other value in boolean is false.....
 let ud;  //undefined
 
@@ -34,6 +29,15 @@ function add(a,b){
 let summ= add(3,4);
 console.log("Sum using functions : ", summ);
 
+
+function onetonine(){
+    for(let i=1;i<10;i++){
+        console.log(i);
+    }
+}
+console.log("Numbers from 1 to 9 : ",onetonine());
+
+
 //objects
 
 const harsh = {
@@ -44,4 +48,40 @@ const harsh = {
   };
 
 console.log("Value fetch using objects : \nName :",harsh.name +"\nAge: ", harsh.age+"\nEyecolor: ",harsh.eyeColor);
+
+const para={
+    car:"BMW",
+    model:"X5",
+    year:2021,
+    color:"black",
+    price: 5000000,
+    owner:"Harsh",
+    city:"Ahmedabad",
+    state:"Gujarat",
+    country:"India"
+}
+console.log("\nDirectly printing objects : \n",para);
+console.log("Objects and their working");
+console.log("Car : ",para.car);
+console.log("Model : ",para.model); 
+console.log("Year : ",para.year);
+console.log("Color : ",para.color);
+console.log("Price : ",para.price);
+console.log("Owner : ",para.owner);
+console.log("City : ",para.city);
+console.log("State : ",para.state);
+console.log("Country : ",para.country);
+
+ // Create an Object
+ const person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+console.log("\nUsing Array : \n")
+// Create an Array
+const myArray = Object.values(person);//Object.values() method returns an array of a given object
+
+console.log("Array : ",myArray);
+
 
