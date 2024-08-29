@@ -22,8 +22,8 @@ console.log(mu)
 console.log(zu)
 
 // Object:
-const person = {firstName:"John", lastName:"Doe"};
-console.log("Object : ",person);
+// const person = {firstName:"John", lastName:"Doe"};
+// console.log("Object : ",person);
 // Array object:
 const cars = ["Saab", "Volvo", "BMW"];
 console.log("Array : ",cars);
