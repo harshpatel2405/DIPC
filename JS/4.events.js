@@ -10,10 +10,12 @@ function mouse(){
 
 // mouseovr.eventlistener("mouseover",function);
 
-function handleMouseOut() {
-    document.getElementById("output").innerHTML = "Mouse has left the area!";
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const myBox = document.getElementById("myBox");
 
-// Add the onmouseout event listener
-document.getElementById("hoverArea").addEventListener("mouseout", handleMouseOut);
+    myBox.addEventListener("click", event => {
+        event.target.style.backgroundColor = "tomato";   // Changes the background color to tomato
+        event.target.textContent = "Ouch! 😒";           // Changes the text content inside the box
+    });
+});
 
