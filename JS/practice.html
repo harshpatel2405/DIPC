@@ -38,9 +38,34 @@
   
   <!-- <div class="mouseovr">Move over me </div> -->
   <!-- events.js line 6 -->
-    
- 
+  <!-- <button id="checkPrimes">Check Prime Numbers</button>
+  <div id="output"></div> -->
 
+
+  <div id="hoverArea" style="width: 200px; height: 100px; background-color: lightblue; text-align: center; line-height: 100px;">
+    Hover over me
+</div>
+<div id="output"></div>
+ <script>
+  function checkPrimeNumbers() {
+    let output = "";
+    for (let i = 1; i < 100; i++) {  // Start from 2 since 0 and 1 are not prime numbers
+        let counts = 0;  // Reset counts for each i
+        for (let j = 1; j <= i; j++) {
+            if (i % j == 0) {  // Check if i is divisible by j
+                counts++;
+            }
+        }
+        if (counts == 2) {  // A prime number has exactly two divisors: 1 and itself
+            output += i + " is prime<br>";
+        }
+    }
+    document.getElementById("output").innerHTML = output;
+}
+
+// Event listener for button click
+document.getElementById("checkPrimes").addEventListener("click", checkPrimeNumbers);
+</script>
 
 </body>
 </html>

@@ -10,3 +10,10 @@ function mouse(){
 
 // mouseovr.eventlistener("mouseover",function);
 
+function handleMouseOut() {
+    document.getElementById("output").innerHTML = "Mouse has left the area!";
+}
+
+// Add the onmouseout event listener
+document.getElementById("hoverArea").addEventListener("mouseout", handleMouseOut);
+
