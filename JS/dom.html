@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Image Source Example</title>
+  <style>
+    .highligh {
+      background-color: yellow;
+      font-weight: bold;
+      width :300px;
+      text-align: center;
+      font-size:30px;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="image" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Placeholder Image">
+  <button id="changeImageBtn">Change Image</button>
+
+
+  <p id="text">This is some text.</p>
+  <button id="toggleClassBtn">Toggle Highlight</button>
+
+  <script>
+    const changeImageBtn = document.getElementById('changeImageBtn');
+    const image = document.getElementById('image');
+    
+    changeImageBtn.onclick = function() {
+      image.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    };
+    
+
+    const toggleClassBtn = document.getElementById('toggleClassBtn'); //toggle assigns  a CSS class to the element and takes away class properties if it already there.
+    const text = document.getElementById('text');
+
+    toggleClassBtn.onclick = function() {
+      text.classList.toggle('highligh');
+    };
+  </script>
+
+</body>
+</html>
