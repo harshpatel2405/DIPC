@@ -14,8 +14,12 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
+      },
+      {
+        test: /\.css$/, // Correctly set up for CSS
+        use: ['style-loader', 'css-loader'],
       }
     ]
   },
@@ -27,12 +31,12 @@ module.exports = {
     static: './dist',
     onListening: function (server) {
       console.log('Server is running...');
-      console.log('Options:', server.options); // Log the options to see what we have
+      console.log('Options:', server.options);
     }
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './public/index.html'
     })
   ]
 };

@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    padding : 10px auto;
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+ /* Add some padding */
+    background-color: #f8f8f8; /* Optional: background color for the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+
+
+    
+}
+h5 {
+    margin: 0; /* Remove default margin */
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+h5:hover {
+    color: #007bff; /* Change color on hover */
+}
