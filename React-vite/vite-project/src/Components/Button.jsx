@@ -13,9 +13,7 @@ function Button(){
         console.log(`${name}, stop clicking me ,i am getting annoyed.🤒`)
     }
 
-    if(count==10){
-        alert("FBI is after you...")
-    }
+    
 }
     return(
         <button onClick={ () => handleClick("Harsh") }>Click Me !😁</button>

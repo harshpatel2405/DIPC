@@ -1,7 +1,25 @@
+// src/components/Footer.jsx
+import React from 'react';
 
-function Footer(){
+class Footer extends React.Component {
+  render() {
+    const footerStyle = {
+      backgroundColor: '#333',
+      color: 'white',
+      textAlign: 'center',
+      padding: '10px',
+      position: 'fixed',
+      width: '100%',
+      bottom: 0
+    };
+
     return (
-        <strong>&copy; React | Build by Harsh</strong>
+      <footer style={footerStyle}>
+        <strong>Centralized by Demo Team....</strong>
+        <p>&copy; {new Date().getFullYear()} | React Practice</p>
+      </footer>
     );
+  }
 }
+
 export default Footer;
