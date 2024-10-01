@@ -1,0 +1,84 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container */
+  .todo-list {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input field */
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Add button */
+  button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Bootstrap Primary Color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* To-Do list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  /* To-Do items */
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+  }
+  
+  /* Remove button */
+  li button {
+    padding: 5px 10px;
+    background-color: #dc3545; /* Bootstrap Danger Color */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Remove button hover effect */
+  li button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+  }
+  
