@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './stateComponent.css'; // Import the CSS file
+import '../../css_files/stateComponent.css'; // Import the CSS file
 
 function StateComponent() {
     const [name, setName] = useState("Guest");

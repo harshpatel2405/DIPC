@@ -1,0 +1,109 @@
+/* src/css_files/Navbar.css */
+
+/* Main Navbar Styles */
+.navbar {
+  background-color: #003366; /* Deep Blue background for a professional look */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styles */
+.navbar-logo {
+  color: #ffffff; /* Clean white color for the logo */
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.navbar-logo:hover {
+  color: #ffcc00; /* Soft gold hover effect for logo */
+}
+
+/* Navigation Menu */
+.navbar-ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each menu item */
+.navbar-li {
+  margin-left: 30px;
+}
+
+/* Link Styles */
+.navbar-link {
+  color: tomato;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect for Links */
+.navbar-link:hover {
+  background-color: #ffcc00; /* Gold hover effect */
+  color: #003366; /* Darker blue for hover text */
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Hamburger Button */
+.navbar-toggle {
+  display: none; /* Hide button on larger screens */
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .navbar-ul {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .navbar-ul.open {
+    display: flex; /* Show links when open */
+  }
+
+  .navbar-li {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .navbar-link {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent for mobile */
+  }
+
+  .navbar-link:hover {
+    background-color: #ffcc00; /* Gold hover on mobile */
+    color: #003366;
+  }
+
+  .navbar-toggle {
+    display: block; /* Show button on smaller screens */
+  }
+}
