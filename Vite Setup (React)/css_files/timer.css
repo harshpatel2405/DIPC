@@ -1,0 +1,48 @@
+.timer-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #00bfff; /* Light blue border */
+    border-radius: 10px;
+    background-color: #f0f8ff; /* Light background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timer-title {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .timer-count {
+    font-size: 1.5em;
+    color: #ff4500; /* Tomato color */
+  }
+  
+  .timer-controls {
+    margin-top: 20px;
+  }
+  
+  .timer-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .timer-button:hover {
+    background-color: #00bfff; /* Light blue on hover */
+    color: white;
+  }
+  
+  .reset-button {
+    background-color: #ff4500; /* Tomato color */
+    color: white;
+  }
+  
+  .reset-button:hover {
+    background-color: #c0392b; /* Darker shade of tomato on hover */
+  }
+  

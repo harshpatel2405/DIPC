@@ -1,0 +1,105 @@
+/* Styling for the form container */
+.form-handle {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form heading styling */
+.form-handle h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* On focus, give input and select elements a highlight */
+input[type="text"]:focus, select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Checkbox and label styling */
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+strong {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Submit button styling */
+.button_submit {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect on the submit button */
+.button_submit:hover {
+    background: linear-gradient(135deg, #0056b3, #003f8a);
+    box-shadow: 0 6px 12px rgba(0, 91, 178, 0.4);
+}
+
+/* General form element spacing */
+input, select, strong, .button_submit {
+    margin-top: 10px;
+    font-family: inherit;
+}
+
+/* Success message styling */
+.success-message {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    background-color: #d4edda;
+    color: #155724;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Form layout adjustments for small screens */
+@media (max-width: 768px) {
+    .form-handle {
+        padding: 20px;
+    }
+
+    input[type="text"], select {
+        font-size: 14px;
+    }
+
+    .button_submit {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .success-message {
+        font-size: 16px;
+    }
+}
