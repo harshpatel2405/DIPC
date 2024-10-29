@@ -1,0 +1,80 @@
+/* Home.css */
+.home-container {
+  max-width: 800px; /* Limit width */
+  margin: 50px auto; /* Center the content */
+  padding: 30px; /* Increase padding for a more spacious feel */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+  background-color: #f9f9f9; /* Light gray background for a soft look */
+  text-align: center; /* Center align text */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.home-container:hover {
+  transform: scale(1.02); /* Slight scale on hover */
+}
+
+h1 {
+  color: #2980b9; /* Bright blue color for main title */
+  font-size: 2.5em; /* Large font size for the title */
+  margin-bottom: 20px; /* Space below title */
+  font-family: 'Arial', sans-serif; /* Consistent font style */
+}
+
+.intro-text {
+  color: #34495e; /* Slightly lighter dark text for contrast */
+  font-size: 1.2em; /* Base font size for intro text */
+  margin-bottom: 30px; /* Space below intro text */
+  line-height: 1.6; /* Improved readability */
+}
+
+h2 {
+  color: #27ae60; /* Vibrant green for subheading */
+  font-size: 2em; /* Font size for features */
+  margin-bottom: 15px; /* Space below subheading */
+}
+
+.features-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 20px 0; /* Space around the list */
+}
+
+.features-list li {
+  color: #555; /* Gray color for list items */
+  font-size: 1.1em; /* Base font size for list items */
+  margin: 10px 0; /* Space between list items */
+  transition: color 0.3s ease; /* Transition for color change */
+}
+
+.features-list li:hover {
+  color: #2980b9; /* Change color on hover */
+}
+
+.button-container {
+  margin-top: 30px; /* Space above buttons */
+}
+
+.button-container button {
+  padding: 12px 25px; /* Padding for buttons */
+  margin: 0 10px; /* Space between buttons */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #2ecc71; /* Green background */
+  color: white; /* White text */
+  cursor: pointer;
+  font-size: 1.2em; /* Base font size */
+  font-weight: bolder;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+.button-container button:hover {
+  background-color: #27ae60; /* Darker green on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover for depth */
+}
+
+.button-container button:active {
+  transform: translateY(1px); /* Slightly push down when clicked */
+  box-shadow: none; /* Remove shadow when active */
+}

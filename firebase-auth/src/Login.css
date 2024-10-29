@@ -1,0 +1,120 @@
+.login-wrapper {
+    max-width: 400px;
+    margin: auto;
+    padding: 25px; /* Consistent padding for the container */
+    border: 1px solid #e0e0e0; /* Light border for the container */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background-color: #ffffff; /* White background for consistency */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    transition: transform 0.3s ease; /* Add a slight scale animation */
+  }
+  
+  .login-wrapper:hover {
+    transform: scale(1.03); /* Slightly enlarge on hover */
+  }
+  
+  .login-title {
+    text-align: center;
+    margin-bottom: 25px; /* Space below title */
+    color: #4a4a4a; /* Darker text for visibility */
+    font-family: 'Arial', sans-serif; /* Consistent font style */
+    font-size: 24px; /* Larger font size for title */
+    animation: fadeIn 0.5s; /* Fade-in animation for the title */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .login-input {
+    width: 100%; /* Full width */
+    padding: 12px; /* Comfortable padding */
+    margin: 12px 0; /* Spacing between inputs */
+    border: 1px solid #ccc; /* Soft border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus state */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+  }
+  
+  .login-input:focus {
+    border-color: #007bff; /* Blue focus border */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Soft blue glow on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .login-button,
+  .otp-verify-button,
+  .toggle-login-method {
+    width: 100%; /* Full width buttons */
+    padding: 12px; /* Match padding for buttons */
+    margin: 15px 0; /* Consistent spacing */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Hover effect */
+  }
+  
+  .login-button {
+    background-color: #4caf50; /* Green background for login button */
+  }
+  
+  .login-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 20px rgba(0, 128, 0, 0.5); /* Green shadow effect */
+  }
+  
+  .otp-verify-button {
+    background-color: #28a745; /* Green background for OTP verify button */
+  }
+  
+  .otp-verify-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 20px rgba(0, 128, 0, 0.5); /* Green shadow effect */
+  }
+  
+  .toggle-login-method {
+    background-color: #ffc107; /* Yellow background for toggle button */
+  }
+  
+  .toggle-login-method:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 20px rgba(255, 193, 7, 0.5); /* Yellow shadow effect */
+  }
+  
+  .recaptcha-container {
+    margin: 15px 0; /* Space for recaptcha */
+  }
+  
+  .signup-prompt {
+    text-align: center;
+    margin-top: 25px; /* Space above prompt */
+    color: #555; /* Gray text */
+  }
+  
+  .signup-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #007bff; /* Blue text */
+    cursor: pointer;
+    font-size: 14px; /* Font size for link */
+    text-decoration: underline; /* Underlined text */
+    transition: color 0.3s, transform 0.2s; /* Transition for hover effect */
+  }
+  
+  .signup-button:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+  }
+  

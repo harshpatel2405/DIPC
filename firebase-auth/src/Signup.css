@@ -1,0 +1,122 @@
+.signup-wrapper {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid #00961e; /* Teal border for a fresh look */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(183, 100, 100, 0.15);
+    background: linear-gradient(135deg, hsl(187, 97%, 48%), #ffeb3b); /* Gradient background */
+    animation: fadeIn 0.5s ease-in; /* Animation for entering */
+  }
+  
+  .signup-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #02534a; /* Darker teal for the title */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px; /* Increased font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Text shadow */
+  }
+  
+  .signup-input {
+    width: 100%;
+    padding: 14px;
+    margin: 15px 0;
+    border: 2px solid #b2ebf2; /* Light blue border */
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    box-sizing: border-box; /* Prevents overflow */
+  }
+  
+  .signup-input:focus {
+    border-color: #009688; /* Teal focus border */
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.5); /* Shadow on focus */
+    outline: none;
+  }
+  
+  .signup-action-button {
+    width: 100%;
+    padding: 14px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #4caf50; /* Green button */
+    color: white;
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Include box-shadow in transition */
+    position: relative; /* Position for pseudo-element */
+  }
+  
+  .signup-action-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light overlay */
+    opacity: 0;
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 0; /* Behind text */
+  }
+  
+  .signup-action-button:hover {
+    background-color: #388e3c; /* Darker green hover color */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  
+  .signup-action-button:hover::before {
+    opacity: 1; /* Show overlay on hover */
+  }
+  .existing-account-prompt {
+    text-align: center;
+    margin-top: 25px;
+    color: #555; /* Soft gray color for text */
+    font-size: 16px; /* Slightly larger font size */
+    font-family: 'Arial', sans-serif; /* Consistent font style */
+    position: relative; /* For pseudo-element */
+  }
+  
+  .existing-account-prompt::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Position above the text */
+    left: 50%; /* Center it */
+    transform: translateX(-50%); /* Centering transform */
+    width: 80%; /* Width of the line */
+    height: 2px; /* Thickness of the line */
+    background-color: #00796b; /* Teal line for emphasis */
+    border-radius: 10px; /* Rounded corners for the line */
+  }
+  
+  .login-toggle-button {
+    background: none;
+    border: none;
+    color: #1976d2; /* Blue color for the button text */
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for better readability */
+    text-decoration: underline; /* Underlined text for emphasis */
+    transition: color 0.3s, transform 0.2s; /* Smooth color and transform transition */
+  }
+  
+  .login-toggle-button:hover {
+    color: #1565c0; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
